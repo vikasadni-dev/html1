@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Contact Sederhana</title>
+  </head>
+  <body>
+    <h1>Form Pendaftaran</h1>
+    <form>
+      <label>Nama</label>
+      <input type="text" placeholder="Tulis nama disini.." />
+      <br />
+      <label>Email</label>
+      <input type="email" placeholder="example@gmail.com" />
+      <br />
+      <label>Password</label>
+      <input type="password" placeholder="***" />
+      <br />
+      <label>Umur</label>
+      <input type="number" min="0" max="120" placeholder="19" />
+      <br />
+      <label>Jenis Kelamin</label>
+      <input type="radio" name="jenis-kelamin" value="male" /> Laki-laki
+      <input type="radio" name="jenis-kelamin" value="female" /> Perempuan
+      <br />
+      <label>Role</label>
+      <select>
+        <option value="admin">Admin</option>
+        <option value="user">User</option>
+        <option value="guest">Guest</option>
+        <option value="moderator">Moderator</option>
+      </select>
+      <br />
+      <input type="checkbox" /> saya setuju dengan syarat dan ketentuan
+      <br />
+      <label>Comment</label>
+      <br />
+      <textarea
+        rows="5"
+        cols="30"
+        placeholder="Tulis komentar disini.."
+      ></textarea>
+      <!-- rows: baris yang ada di area, cols:kolom-->
+      <br />
+      <input type="submit" value="Kirim" />
+    </form>
+  </body>
+</html>
