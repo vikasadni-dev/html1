@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Contact Sederhana</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <h1>Form Pendaftaran</h1>
+    <h1 class="text-3xl pb-5 pl-3 pt-5 bg-yellow-100 text-blue-500 font-bold">
+      Form Pendaftaran
+    </h1>
     <form>
-      <label>Nama</label>
+      <label class="ml-5">Nama</label>
       <input type="text" placeholder="Tulis nama disini.." />
       <br />
-      <label>Email</label>
+      <label class="ml-5">Email</label>
       <input type="email" placeholder="example@gmail.com" />
       <br />
-      <label>Password</label>
+      <label class="ml-5">Password</label>
       <input type="password" placeholder="***" />
       <br />
-      <label>Umur</label>
+      <label class="ml-5">Umur</label>
       <input type="number" min="0" max="120" placeholder="19" />
       <br />
-      <label>Jenis Kelamin</label>
+      <label class="ml-5">Jenis Kelamin</label>
       <input type="radio" name="jenis-kelamin" value="male" /> Laki-laki
       <input type="radio" name="jenis-kelamin" value="female" /> Perempuan
       <br />
-      <label>Role</label>
+      <label class="ml-5">Role</label>
       <select>
         <option value="admin">Admin</option>
         <option value="user">User</option>
@@ -32,18 +35,20 @@
         <option value="moderator">Moderator</option>
       </select>
       <br />
-      <input type="checkbox" /> saya setuju dengan syarat dan ketentuan
+      <input class="ml-5" type="checkbox" /> saya setuju dengan syarat dan
+      ketentuan
       <br />
-      <label>Comment</label>
+      <label class="ml-5">Comment</label>
       <br />
       <textarea
+        class="ml-5"
         rows="5"
         cols="30"
         placeholder="Tulis komentar disini.."
       ></textarea>
       <!-- rows: baris yang ada di area, cols:kolom-->
       <br />
-      <input type="submit" value="Kirim" />
+      <input class="ml-5" type="submit" value="Kirim" />
     </form>
   </body>
 </html>
